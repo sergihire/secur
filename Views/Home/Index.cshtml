@@ -1,10 +1,10 @@
-@{
+﻿@{
     ViewData["Title"] = "Home Page";
+    ViewData["Description"] = "The home page of my website";
 }
 
-<app asp-prerender-module="ClientApp/dist/main-server">Loading...</app>
+<p>This is the index.cshtml</p>
 
-<script src="~/dist/vendor.js" asp-append-version="true"></script>
-@section scripts {
-    <script src="~/dist/main-client.js" asp-append-version="true"></script>
+@section Scripts {
+    @*Insert any script tags for this page here*@
 }
