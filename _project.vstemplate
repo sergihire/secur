@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>ASP.NET Core Angular 2 Starter Application (.NET Core)</Name>
+    <Description>An MVC web application that hosts an Angular 2 single-page application.</Description>
+    <DefaultName>Angular2Application</DefaultName>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>Web</ProjectSubType>
+    <RequiredFrameworkVersion>4.5.1</RequiredFrameworkVersion>
+    <CreateInPlace>true</CreateInPlace>
+    <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+    <SortOrder>1001</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon Package="{63b2059e-1711-455f-9d05-02ed4a439082}" ID="400" />
+    <TemplateID>aspnet.core.basic</TemplateID>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="AspNetCoreAngular2.xproj" ReplaceParameters="true" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" TargetFileName="$safeprojectname$.xproj">
+      <ProjectItem ReplaceParameters="true" TargetFileName=".gitignore">.gitignore</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+      <Folder Name="ClientApp" TargetFolderName="ClientApp">
+        <Folder Name="app" TargetFolderName="app">
+          <ProjectItem ReplaceParameters="true" TargetFileName="app.module.ts">app.module.ts</ProjectItem>
+          <Folder Name="components" TargetFolderName="components">
+            <Folder Name="app" TargetFolderName="app">
+              <ProjectItem ReplaceParameters="true" TargetFileName="app.component.css">app.component.css</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="app.component.html">app.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="app.component.ts">app.component.ts</ProjectItem>
+            </Folder>
+            <Folder Name="counter" TargetFolderName="counter">
+              <ProjectItem ReplaceParameters="true" TargetFileName="counter.component.html">counter.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="counter.component.ts">counter.component.ts</ProjectItem>
+            </Folder>
+            <Folder Name="fetchdata" TargetFolderName="fetchdata">
+              <ProjectItem ReplaceParameters="true" TargetFileName="fetchdata.component.html">fetchdata.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="fetchdata.component.ts">fetchdata.component.ts</ProjectItem>
+            </Folder>
+            <Folder Name="home" TargetFolderName="home">
+              <ProjectItem ReplaceParameters="true" TargetFileName="home.component.html">home.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="home.component.ts">home.component.ts</ProjectItem>
+            </Folder>
+            <Folder Name="navmenu" TargetFolderName="navmenu">
+              <ProjectItem ReplaceParameters="true" TargetFileName="navmenu.component.css">navmenu.component.css</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="navmenu.component.html">navmenu.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="navmenu.component.ts">navmenu.component.ts</ProjectItem>
+            </Folder>
+          </Folder>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="boot-client.ts">boot-client.ts</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="boot-server.ts">boot-server.ts</ProjectItem>
+        <Folder Name="dist" TargetFolderName="dist">
+          <ProjectItem ReplaceParameters="true" TargetFileName="_placeholder.txt">_placeholder.txt</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="main-server.js">main-server.js</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.json">tsconfig.json</ProjectItem>
+      </Folder>
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="HomeController.cs">HomeController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SampleDataController.cs">SampleDataController.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Dockerfile">Dockerfile</ProjectItem>
+      <Folder Name="node_modules" TargetFolderName="node_modules">
+        <ProjectItem ReplaceParameters="true" TargetFileName="_placeholder.txt">_placeholder.txt</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="package.json">package.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="project.json">project.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="project.lock.json">project.lock.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="README.md">README.md</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
+      <Folder Name="Views" TargetFolderName="Views">
+        <ProjectItem ReplaceParameters="true" TargetFileName="_ViewImports.cshtml">_ViewImports.cshtml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="_ViewStart.cshtml">_ViewStart.cshtml</ProjectItem>
+        <Folder Name="Home" TargetFolderName="Home">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Index.cshtml">Index.cshtml</ProjectItem>
+        </Folder>
+        <Folder Name="Shared" TargetFolderName="Shared">
+          <ProjectItem ReplaceParameters="true" TargetFileName="_Layout.cshtml">_Layout.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Error.cshtml">Error.cshtml</ProjectItem>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="web.config">web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="webpack.config.js">webpack.config.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="webpack.config.vendor.js">webpack.config.vendor.js</ProjectItem>
+      <Folder Name="wwwroot" TargetFolderName="wwwroot">
+        <Folder Name="dist" TargetFolderName="dist">
+          <ProjectItem ReplaceParameters="true" TargetFileName="_placeholder.txt">_placeholder.txt</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="89889688147bd7575d6327160d64e760.svg">89889688147bd7575d6327160d64e760.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="main-client.js">main-client.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="vendor.css">vendor.css</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="vendor.js">vendor.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="vendor-manifest.json">vendor-manifest.json</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="web.config">web.config</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
